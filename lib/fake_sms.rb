@@ -10,3 +10,6 @@ module FakeSms
     @messages
   end
 end
+
+
+# RSPEC error occured during the "Adding a Phone Number to Users with Validations" video

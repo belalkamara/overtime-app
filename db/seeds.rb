@@ -18,7 +18,7 @@ puts "1 Admin User Created"
 
 100.times do |post|
   Post.create!(date: Date.today, 
-                rationale: "#{post} rationale content", 
+                rationale: "#{post} is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", 
                 user_id: @user.id, 
                 overtime_request: 2.5)
 end

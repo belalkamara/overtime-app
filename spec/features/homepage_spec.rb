@@ -12,4 +12,18 @@ describe 'hompage' do
 
     expect(post.reload.status).to eq("approved")
   end
+
+  it 'allows the employee to vhange the audit log status from the hompage' do
+    audit_log = FactoryGirl.create(:audit_log)
+    user = FactoryGirl.create(:user)
+    login_as(user, :scope => :user)
+
+    audit_log.update(user_id: user.id)
+
+    visit root_path
+
+    click_on("confirm_#{audit_log.id}")
+
+    expect(post.reload.status).to eq("confirmed")
+  end
 end

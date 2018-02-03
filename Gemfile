@@ -43,5 +43,6 @@ gem 'pundit', '~> 1.1'
 gem 'twilio-ruby', '~> 5.6'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'rails_12factor'
 
 

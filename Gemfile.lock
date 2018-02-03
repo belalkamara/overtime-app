@@ -274,7 +274,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   database_cleaner
   devise (~> 4.3)
-  dotenv-rails
+  dotenv-rails (~> 2.2, >= 2.2.1)
   factory_girl_rails (~> 4.9)
   gritter (~> 1.2)
   jbuilder (~> 2.5)
